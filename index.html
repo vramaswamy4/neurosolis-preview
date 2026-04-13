@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NeuroSolis — a targeted small molecule approach to trigeminal neuralgia."
+    />
+    <title>NeuroSolis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo-link" href="#top" aria-label="NeuroSolis home">
+          <span class="logo-crop">
+            <img
+              src="Neurosolis logo.jpeg"
+              alt="NeuroSolis"
+              width="200"
+              height="48"
+              decoding="async"
+            />
+          </span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#indication">Indication</a>
+          <a href="#market">Market</a>
+          <a href="#science">Science</a>
+          <a href="#strategy">Strategy</a>
+          <a href="#team">Team</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-primary btn-header" href="#contact">Request Deck</a>
+          <button
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <span class="menu-icon"><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav
+      id="mobile-menu"
+      class="mobile-nav"
+      aria-label="Mobile primary"
+      aria-hidden="true"
+      inert
+    >
+      <a href="#indication">Indication</a>
+      <a href="#market">Market</a>
+      <a href="#science">Science</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#team">Team</a>
+      <a class="btn btn-primary" href="#contact">Request Deck</a>
+    </nav>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="neurosolis-bg.svg" alt="" width="1600" height="900" />
+        </div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-heading" class="hero-headline">
+              A Targeted Small Molecule Approach to Trigeminal Neuralgia
+            </h1>
+            <p class="hero-sub">
+              Developing DK-I-56-1, a differentiated GABA-A subtype-selective therapy
+              designed to address the unmet need in trigeminal neuralgia.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#contact">Request Deck</a>
+              <a class="btn btn-secondary" href="#contact">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="hero-cards">
+            <article class="feature-card">
+              <div class="feature-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 16h4l2-6 4 12 3-9 3 9h8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p><strong>Primary Indication:</strong> Trigeminal Neuralgia</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="16" cy="16" r="1.8" fill="currentColor" />
+                </svg>
+              </div>
+              <p><strong>Selective Mechanism:</strong> Rare GABA-A subtype targeting</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 9h10l1 4H10l1-4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 13h12v11a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V13Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M13 17h6M13 21h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <p><strong>Development Stage:</strong> Preclinical</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 20c2.5-2 5-3 8-3s5.5 1 8 3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M10 12c1.5-1.5 3.5-2.5 6-2.5s4.5 1 6 2.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 24c3-2.5 6.5-4 11-4s8 1.5 11 4"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <p><strong>Partnering Strategy:</strong> Milestone-driven value creation</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="indication"
+        class="section section-indication"
+        aria-labelledby="indication-heading"
+      >
+        <div class="section-inner">
+          <header class="section-intro">
+            <h2 id="indication-heading" class="section-title">Trigeminal Neuralgia</h2>
+            <p class="section-lead">
+              A severe neuropathic pain disorder affecting the trigeminal nerve,
+              characterized by sudden, debilitating facial pain.
+            </p>
+          </header>
+
+          <div class="tn-points">
+            <article class="tn-card">
+              <div class="tn-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 3L6 17h7.5L11 29l16-18h-8.5L17 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.65"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="tn-card-body">
+                <h3 class="tn-card-title">Sudden, Electric Pain</h3>
+                <p class="tn-card-text">Episodes triggered by routine daily activities.</p>
+              </div>
+            </article>
+            <article class="tn-card">
+              <div class="tn-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.65" />
+                  <circle cx="12" cy="13" r="1.6" fill="currentColor" />
+                  <circle cx="20" cy="13" r="1.6" fill="currentColor" />
+                  <path
+                    d="M11 20c2-2.5 4.2-3.5 5-3.5s3 1 5 3.5"
+                    stroke="currentColor"
+                    stroke-width="1.65"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="tn-card-body">
+                <h3 class="tn-card-title">Severe Quality-of-Life Impact</h3>
+                <p class="tn-card-text">
+                  Speaking, eating, and brushing teeth can trigger pain.
+                </p>
+              </div>
+            </article>
+            <article class="tn-card">
+              <div class="tn-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.65" />
+                  <path
+                    d="M16 9v10M16 22v.5"
+                    stroke="currentColor"
+                    stroke-width="1.85"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="tn-card-body">
+                <h3 class="tn-card-title">Referred to as the &ldquo;Suicide Disease&rdquo;</h3>
+                <p class="tn-card-text">Reflecting extreme patient distress.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="tn-landscape" role="region" aria-labelledby="landscape-heading">
+            <div class="tn-landscape-card">
+              <h3 id="landscape-heading" class="tn-landscape-card__title">
+                Current Treatment Landscape
+              </h3>
+              <div class="tn-landscape-card__body">
+                <div class="tn-landscape-col">
+                  <p class="tn-landscape-col__lead">
+                    No therapy approved by FDA for the treatment of trigeminal neuralgia.
+                  </p>
+                  <p class="tn-landscape-col__text">
+                    Treatment relies on off-label anticonvulsants.
+                  </p>
+                </div>
+                <div class="tn-landscape-col">
+                  <p class="tn-landscape-col__lead">Carbamazepine as First-Line Standard</p>
+                  <p class="tn-landscape-col__text">
+                    Often discontinued due to tolerability limitations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="market" class="section section-market" aria-labelledby="market-heading">
+        <div class="section-inner">
+          <h2 id="market-heading" class="section-title market-section-heading">Market Opportunity</h2>
+          <div class="market-card" data-reveal>
+            <p class="market-stat" aria-label="1.5 billion dollars">
+              <span class="market-dollar" aria-hidden="true">$</span>1.5&nbsp;B
+            </p>
+            <p class="market-tam">Trigeminal Neuralgia TAM</p>
+            <p class="market-tagline">Orphan neuropathic pain market</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="treatment-landscape"
+        class="section section-ctl"
+        aria-labelledby="ctl-section-heading"
+      >
+        <div class="section-inner">
+          <h2 id="ctl-section-heading" class="section-title ctl-section-title">
+            Current Treatment Landscape
+          </h2>
+
+          <div class="ctl-comparison">
+            <div class="ctl-comparison__header" aria-hidden="true">
+              <span>Standard of Care</span>
+              <span>Clinical Limitations</span>
+            </div>
+            <div class="ctl-comparison__body">
+              <div class="ctl-comparison__col">
+                <h3 class="ctl-comparison__col-title">Carbamazepine</h3>
+                <ul class="ctl-list">
+                  <li>First-line off-label anticonvulsant</li>
+                  <li>Broad GABA modulation</li>
+                  <li>Non-selective CNS activity</li>
+                  <li>Established but imperfect efficacy</li>
+                </ul>
+              </div>
+              <div class="ctl-comparison__col">
+                <h3 class="ctl-comparison__col-title">Tolerability &amp; Discontinuation</h3>
+                <ul class="ctl-list">
+                  <li>Sedation and dizziness</li>
+                  <li>Drug-drug interactions</li>
+                  <li>High discontinuation rates</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ctl-callout">
+            <p class="ctl-callout__lead">
+              No therapy approved by FDA for the treatment of trigeminal neuralgia.
+            </p>
+            <p class="ctl-callout__sub">
+              Significant unmet need for a selective, better-tolerated alternative.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="science" class="section section-asset" aria-labelledby="asset-heading">
+        <div class="section-inner">
+          <header class="asset-intro">
+            <h2 id="asset-heading" class="section-title">The Asset</h2>
+            <p class="asset-kicker">DK-I-56-1</p>
+          </header>
+
+          <div class="asset-grid">
+            <article class="asset-overview-card">
+              <p class="asset-overview-card__label">DK-I-56-1</p>
+              <p class="asset-overview-card__text">
+                A novel small-molecule therapy designed to
+                selectively modulate a rare GABA-A receptor
+                subtype involved in trigeminal pain signaling.
+              </p>
+              <ul class="asset-overview-list">
+                <li>Small-molecule neuromodulator</li>
+                <li>Targets a rare GABA-A receptor subtype</li>
+                <li>Designed for selective neural inhibition</li>
+              </ul>
+              <div class="asset-overview-card__footer">
+                <p class="asset-overview-card__tagline">
+                  A selective approach to
+                  trigeminal pain modulation.
+                </p>
+              </div>
+            </article>
+
+            <div class="asset-features">
+              <article class="asset-feature-card">
+                <div class="asset-feature-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.6" />
+                    <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.6" />
+                    <circle cx="16" cy="16" r="1.8" fill="currentColor" />
+                  </svg>
+                </div>
+                <div class="asset-feature-card__body">
+                  <h3 class="asset-feature-card__title">Selective Targeting</h3>
+                  <p class="asset-feature-card__text">
+                    Designed to act on a rare GABA-A subtype
+                    rather than broadly affecting CNS receptors.
+                  </p>
+                </div>
+              </article>
+              <article class="asset-feature-card">
+                <div class="asset-feature-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 22c2-5 4.5-8 6-8s4 3 6 8M8 12c2.5-3 5-4 8-4s5.5 1 8 4"
+                      stroke="currentColor"
+                      stroke-width="1.55"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12 18h8M14 14h4"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div class="asset-feature-card__body">
+                  <h3 class="asset-feature-card__title">Improved Tolerability Potential</h3>
+                  <p class="asset-feature-card__text">
+                    Selective modulation may reduce sedation
+                    and CNS side effects associated with existing
+                    therapies.
+                  </p>
+                </div>
+              </article>
+              <article class="asset-feature-card">
+                <div class="asset-feature-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11 9h10l1 4H10l1-4Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 13h12v11a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V13Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M13 17h6M13 21h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="asset-feature-card__body">
+                  <h3 class="asset-feature-card__title">Preclinical Evidence</h3>
+                  <p class="asset-feature-card__text">
+                    Demonstrated activity in validated preclinical
+                    models of trigeminal pain.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="strategy" class="section section-strategy" aria-labelledby="strategy-heading">
+        <div class="section-inner">
+          <header class="strategy-intro">
+            <h2 id="strategy-heading" class="section-title">Development Strategy</h2>
+            <p class="strategy-subtitle">A focused path to clinical value creation.</p>
+          </header>
+
+          <div class="strategy-panel">
+            <div class="strategy-panel__top">
+              <div class="strategy-pillar">
+                <div class="strategy-pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11 9h10l1 4H10l1-4Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 13h12v11a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V13Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="strategy-pillar__title">Head-to-Head Preclinical Study</h3>
+                <p class="strategy-pillar__text">
+                  Comparing DK-I-56-1 directly against carbamazepine in validated trigeminal pain models.
+                </p>
+              </div>
+              <div class="strategy-pillar">
+                <div class="strategy-pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 22V10M8 22h16M12 18l3-4 4 3 5-6"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M8 10l4-2v4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <h3 class="strategy-pillar__title">Demonstrate Differentiation</h3>
+                <p class="strategy-pillar__text">
+                  Generate data supporting selective targeting and improved CNS tolerability.
+                </p>
+              </div>
+              <div class="strategy-pillar">
+                <div class="strategy-pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 20c2.5-2 5-3 8-3s5.5 1 8 3"
+                      stroke="currentColor"
+                      stroke-width="1.55"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10 12c1.5-1.5 3.5-2.5 6-2.5s4.5 1 6 2.5"
+                      stroke="currentColor"
+                      stroke-width="1.55"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="strategy-pillar__title">Partner for Clinical Development</h3>
+                <p class="strategy-pillar__text">
+                  Advance toward licensing or strategic partnership following successful preclinical results.
+                </p>
+              </div>
+            </div>
+            <div class="strategy-panel__footer">
+              <ul class="strategy-panel__footer-list">
+                <li>Establish clear differentiation in efficacy and tolerability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="milestones" class="section section-band" aria-labelledby="milestones-heading">
+        <div class="section-inner">
+          <header class="band-intro">
+            <h2 id="milestones-heading" class="section-title">Milestones and Use of Funds</h2>
+            <p class="band-subtitle">The next value-creation phase.</p>
+          </header>
+
+          <div class="band-hero-card">
+            <p class="band-hero-card__stat">
+              <span class="market-dollar" aria-hidden="true">$</span>600K Raise
+            </p>
+            <p class="band-hero-card__sub">
+              Funding a focused preclinical validation program.
+            </p>
+          </div>
+
+          <div class="milestone-tile-grid">
+            <article class="milestone-tile">
+              <div class="milestone-tile__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 9h10l1 4H10l1-4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 13h12v11a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V13Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M13 17h6M13 21h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="milestone-tile__title">Head-to-Head Study</h3>
+              <p class="milestone-tile__text">
+                Execute preclinical comparison of DK-I-56-1 vs carbamazepine.
+              </p>
+            </article>
+            <article class="milestone-tile">
+              <div class="milestone-tile__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 22V10M8 22h16M12 18l3-4 4 3 5-6"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M8 10l4-2v4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="milestone-tile__title">Data Generation</h3>
+              <p class="milestone-tile__text">
+                Establish differentiation in efficacy and tolerability.
+              </p>
+            </article>
+            <article class="milestone-tile">
+              <div class="milestone-tile__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 20c2.5-2 5-3 8-3s5.5 1 8 3"
+                    stroke="currentColor"
+                    stroke-width="1.55"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M10 12c1.5-1.5 3.5-2.5 6-2.5s4.5 1 6 2.5"
+                    stroke="currentColor"
+                    stroke-width="1.55"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="milestone-tile__title">Business Development</h3>
+              <p class="milestone-tile__text">
+                Engage potential pharmaceutical partners.
+              </p>
+            </article>
+            <article class="milestone-tile">
+              <div class="milestone-tile__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 24V10l4-2v16" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  <path
+                    d="M11 10h14l-2 5 2 5H11V10Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="milestone-tile__title">Value Inflection</h3>
+              <p class="milestone-tile__text">
+                Position the program for licensing or strategic partnership.
+              </p>
+            </article>
+          </div>
+
+          <div class="band-foot-card">
+            <p class="band-foot-card__lead">A clear partnering milestone.</p>
+            <p class="band-foot-card__sub">
+              Generating the data needed to support strategic collaboration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="traction" class="section section-band section-traction" aria-labelledby="traction-heading">
+        <div class="section-inner">
+          <header class="band-intro">
+            <h2 id="traction-heading" class="section-title">Traction &amp; Credibility</h2>
+            <p class="band-subtitle">Early validation from industry and research partners.</p>
+          </header>
+
+          <div class="traction-panel">
+            <div class="traction-panel__col">
+              <div class="traction-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 26V12l4-2v16M11 12h14v14H11V12Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M14 16h4M14 20h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                  <path d="M16 8v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="traction-panel__title">Pharma Collaboration</h3>
+              <p class="traction-panel__text">
+                Prior development partnership
+                with a major pharmaceutical
+                company.
+              </p>
+            </div>
+            <div class="traction-panel__col">
+              <div class="traction-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 9h10l1 4H10l1-4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 13h12v11a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V13Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M13 17h6M13 21h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="traction-panel__title">CRO Continuity</h3>
+              <p class="traction-panel__text">
+                The same CRO team that
+                advanced the previous program
+                remains engaged.
+              </p>
+            </div>
+            <div class="traction-panel__col">
+              <div class="traction-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 12c0-1.5 1.2-2.7 2.8-2.7h10.4c1.6 0 2.8 1.2 2.8 2.7v6.5c0 1.5-1.2 2.7-2.8 2.7H15l-4 3.2V21h-.2C9.2 21 8 19.8 8 18.3V12Z"
+                    stroke="currentColor"
+                    stroke-width="1.55"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="15" r="1.1" fill="currentColor" />
+                  <circle cx="16" cy="15" r="1.1" fill="currentColor" />
+                  <circle cx="20" cy="15" r="1.1" fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="traction-panel__title">Partner Interest</h3>
+              <p class="traction-panel__text">
+                Early conversations with
+                potential pharmaceutical
+                partners.
+              </p>
+            </div>
+          </div>
+
+          <div class="band-foot-card">
+            <p class="band-foot-card__lead">Positioned for strategic partnership.</p>
+            <p class="band-foot-card__sub">
+              Focused execution with experienced collaborators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section section-team" aria-labelledby="team-heading">
+        <div class="section-inner">
+          <header class="band-intro">
+            <h2 id="team-heading" class="section-title">Leadership Team</h2>
+            <p class="band-subtitle">Experienced scientists advancing targeted neurological therapeutics.</p>
+          </header>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                class="team-card__photo"
+                src="Joe_beck.jpeg"
+                alt="Portrait of Michael Hendrickson"
+                width="128"
+                height="128"
+                loading="lazy"
+              />
+              <h3 class="team-card__name">Michael Hendrickson</h3>
+              <p class="team-card__bio">
+                18 years in neuroscience &amp; drug development; former Director of Preclinical Development and VP of Operations.
+              </p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-card__photo"
+                src="Joe_beck.jpeg"
+                alt="Portrait of Joseph Beck"
+                width="128"
+                height="128"
+                loading="lazy"
+              />
+              <h3 class="team-card__name">Joseph Beck, PhD</h3>
+              <p class="team-card__bio">Neuroscientist and serial entrepreneur with three successful startups.</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-card__photo"
+                src="Joe_beck.jpeg"
+                alt="Portrait of Barry Stieglitz"
+                width="128"
+                height="128"
+                loading="lazy"
+              />
+              <h3 class="team-card__name">Barry Stieglitz, PhD</h3>
+              <p class="team-card__bio">
+                18 years pre-clinical research, including serving as principal investigator.
+              </p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-card__photo"
+                src="Joe_beck.jpeg"
+                alt="Portrait of Alex Kasper"
+                width="128"
+                height="128"
+                loading="lazy"
+              />
+              <h3 class="team-card__name">Alex Kasper</h3>
+              <p class="team-card__bio">
+                20 years of CFO experience, including 14 years in small pharmaceutical companies.
+              </p>
+            </article>
+          </div>
+
+          <div class="band-foot-card">
+            <p class="band-foot-card__lead">Proven track record in neuroscience ventures.</p>
+            <p class="band-foot-card__sub">
+              The team previously partnered a small-molecule asset to MapLight Therapeutics, contributing to $600M in fundraising and a $300M IPO.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+        <div class="section-inner contact-layout">
+          <div class="contact-copy">
+            <h2 id="contact-heading" class="contact-title">Ready to explore the opportunity?</h2>
+            <p class="contact-copy__text">
+              NeuroSolis is advancing a differentiated preclinical therapy for trigeminal
+              neuralgia with expansion potential into migraine.
+            </p>
+            <p class="contact-copy__text">
+              For investor inquiries, partnering discussions, or access to additional
+              diligence materials, contact the NeuroSolis team below.
+            </p>
+            <ul class="contact-points" aria-label="Inquiry options">
+              <li>Investor Inquiries</li>
+              <li>Partnering Discussions</li>
+              <li>Request Data Room Access</li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <label class="field">
+                <span>Full Name</span>
+                <input type="text" name="fullName" placeholder="Full Name" required />
+              </label>
+              <label class="field">
+                <span>Organization / Firm</span>
+                <input type="text" name="organization" placeholder="Organization / Firm" required />
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+              <label class="field">
+                <span>Inquiry Type</span>
+                <select name="inquiryType" required>
+                  <option value="">Select inquiry type</option>
+                  <option selected>Investor Inquiry</option>
+                  <option>Partnering Discussion</option>
+                  <option>Request Data Room Access</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Briefly describe your inquiry"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary contact-submit">Submit Inquiry</button>
+              <p class="contact-status" id="contact-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="footer-inner">
+        <span class="footer-logo-crop"><img src="Neurosolis logo.jpeg" alt="NeuroSolis" width="280" height="68" class="footer-logo" /></span>
+        <p class="footer-line">NeuroSolis Therapeutics, Inc.</p>
+        <p class="footer-line">Developing targeted therapies for neurological disorders.</p>
+        <p class="footer-line"><a href="mailto:contact@neurosolis.com">contact@neurosolis.com</a></p>
+        <p class="footer-copy">&copy; 2026 NeuroSolis Therapeutics, Inc.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <script>
+      (function () {
+        var toggle = document.querySelector(".menu-toggle");
+        var menu = document.getElementById("mobile-menu");
+        if (!toggle || !menu) return;
+
+        function setOpen(open) {
+          menu.classList.toggle("is-open", open);
+          menu.setAttribute("aria-hidden", open ? "false" : "true");
+          if (open) menu.removeAttribute("inert");
+          else menu.setAttribute("inert", "");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          document.body.style.overflow = open ? "hidden" : "";
+        }
+
+        toggle.addEventListener("click", function () {
+          setOpen(!menu.classList.contains("is-open"));
+        });
+
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            setOpen(false);
+          });
+        });
+
+        window.addEventListener("resize", function () {
+          if (window.matchMedia("(min-width: 1024px)").matches) {
+            setOpen(false);
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && menu.classList.contains("is-open")) {
+            setOpen(false);
+            toggle.focus();
+          }
+        });
+      })();
+
+      (function () {
+        var selector = [
+          ".market-card",
+          ".tn-card",
+          ".tn-landscape-card",
+          ".ctl-comparison",
+          ".ctl-callout",
+          ".asset-overview-card",
+          ".asset-feature-card",
+          ".strategy-panel",
+          ".milestone-tile",
+          ".band-hero-card",
+          ".band-foot-card",
+          ".traction-panel",
+          ".team-card",
+          ".contact-copy",
+          ".contact-form-wrap"
+        ].join(",");
+
+        var nodes = document.querySelectorAll(selector);
+        if (!nodes.length) return;
+
+        nodes.forEach(function (el, idx) {
+          el.setAttribute("data-reveal", "");
+          el.style.setProperty("--reveal-delay", (idx % 4) * 70 + "ms");
+        });
+
+        function reveal(el) {
+          el.classList.add("is-visible");
+        }
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          nodes.forEach(reveal);
+          return;
+        }
+
+        if (!("IntersectionObserver" in window)) {
+          nodes.forEach(reveal);
+          return;
+        }
+
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              reveal(entry.target);
+              io.unobserve(entry.target);
+            });
+          },
+          { root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.12 }
+        );
+
+        nodes.forEach(function (el) {
+          io.observe(el);
+        });
+      })();
+
+      (function () {
+        var btn = document.getElementById("back-to-top");
+        if (!btn) return;
+
+        function sync() {
+          btn.classList.toggle("is-visible", window.scrollY > 520);
+        }
+
+        window.addEventListener("scroll", sync, { passive: true });
+        sync();
+
+        btn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      })();
+
+      (function () {
+        var form = document.getElementById("contact-form");
+        var status = document.getElementById("contact-status");
+        if (!form || !status) return;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          if (!form.reportValidity()) {
+            status.textContent = "Please complete all required fields.";
+            status.classList.remove("is-success");
+            return;
+          }
+
+          status.textContent =
+            "Thanks - your inquiry is captured locally for now. We can wire backend delivery when ready.";
+          status.classList.add("is-success");
+          form.reset();
+        });
+      })();
+    </script>
+  </body>
+</html>
