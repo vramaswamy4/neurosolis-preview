@@ -1006,8 +1006,8 @@ button {
 }
 
 .strategy-pillar__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin: 0 auto 0.8rem;
   display: flex;
   align-items: center;
@@ -1016,8 +1016,8 @@ button {
 }
 
 .strategy-pillar__icon svg {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 
 .strategy-pillar__title {
@@ -1225,8 +1225,8 @@ button {
 }
 
 .milestone-tile__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin: 0 auto 0.85rem;
   display: flex;
   align-items: center;
@@ -1235,8 +1235,8 @@ button {
 }
 
 .milestone-tile__icon svg {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 
 .milestone-tile__title {
@@ -1282,6 +1282,11 @@ button {
   color: var(--color-text-muted);
 }
 
+/* Keep strict A/B alternation between milestones and traction */
+.section-traction {
+  background: var(--section-bg-a);
+}
+
 .traction-panel {
   display: grid;
   gap: 0;
@@ -1324,8 +1329,8 @@ button {
 }
 
 .traction-panel__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin: 0 auto 0.85rem;
   display: flex;
   align-items: center;
@@ -1334,8 +1339,8 @@ button {
 }
 
 .traction-panel__icon svg {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 
 .traction-panel__title {
@@ -1359,7 +1364,7 @@ button {
 
 /* ----- Leadership team ----- */
 .section-team {
-  background: var(--section-bg-a);
+  background: var(--section-bg-b);
 }
 
 .team-grid {
@@ -1420,7 +1425,7 @@ button {
 
 /* ----- Contact section ----- */
 .section-contact {
-  background: var(--section-bg-b);
+  background: var(--section-bg-a);
 }
 
 .contact-layout {
