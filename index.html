@@ -793,6 +793,17 @@
 
           <div class="contact-form-wrap">
             <form class="contact-form" id="contact-form" novalidate>
+              <input
+                type="hidden"
+                name="access_key"
+                value="7640af06-0ef2-4d36-b8a4-8da3ea0e5521"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="NeuroSolis Website Contact Form Submission"
+              />
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
               <label class="field">
                 <span>Full Name</span>
                 <input type="text" name="fullName" placeholder="Full Name" required />
@@ -824,6 +835,10 @@
                   required
                 ></textarea>
               </label>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LdC5NosAAAAAPGtJgAF9V04hMe2r5OUzvgTjNPM"
+              ></div>
               <button type="submit" class="btn btn-primary contact-submit">Submit Inquiry</button>
               <p class="contact-status" id="contact-status" aria-live="polite"></p>
             </form>
@@ -844,6 +859,7 @@
 
     <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
       (function () {
         var toggle = document.querySelector(".menu-toggle");
@@ -962,7 +978,7 @@
         var status = document.getElementById("contact-status");
         if (!form || !status) return;
 
-        form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", async function (e) {
           e.preventDefault();
 
           if (!form.reportValidity()) {
@@ -971,10 +987,42 @@
             return;
           }
 
-          status.textContent =
-            "Thanks - your inquiry is captured locally for now. We can wire backend delivery when ready.";
-          status.classList.add("is-success");
-          form.reset();
+          if (typeof grecaptcha === "undefined" || !grecaptcha.getResponse()) {
+            status.textContent = "Please complete the CAPTCHA verification.";
+            status.classList.remove("is-success");
+            return;
+          }
+
+          status.textContent = "Sending your inquiry...";
+          status.classList.remove("is-success");
+
+          var formData = new FormData(form);
+          formData.append("from_name", "NeuroSolis Website");
+
+          try {
+            var response = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              body: formData
+            });
+            var result = await response.json();
+
+            if (result.success) {
+              status.textContent = "Thanks - your inquiry was sent successfully.";
+              status.classList.add("is-success");
+              form.reset();
+              grecaptcha.reset();
+              return;
+            }
+
+            status.textContent = "We could not send your inquiry. Please try again.";
+            status.classList.remove("is-success");
+            grecaptcha.reset();
+          } catch (error) {
+            status.textContent =
+              "Network error while sending inquiry. Please check your connection and retry.";
+            status.classList.remove("is-success");
+            grecaptcha.reset();
+          }
         });
       })();
     </script>
