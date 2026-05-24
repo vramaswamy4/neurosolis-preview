@@ -500,7 +500,7 @@ button {
   color: var(--color-primary-dark);
 }
 
-/* ----- Indication: Trigeminal Neuralgia ----- */
+/* ----- Indication: Essential Tremor ----- */
 .section {
   padding: clamp(3rem, 6vw, 5rem) 1.25rem clamp(3.5rem, 7vw, 5.5rem);
 }
@@ -538,19 +538,19 @@ button {
   color: var(--color-text-muted);
 }
 
-.tn-points {
+.et-points {
   display: grid;
   gap: clamp(1rem, 2vw, 1.75rem);
   margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 @media (min-width: 900px) {
-  .tn-points {
+  .et-points {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.tn-card {
+.et-card {
   display: flex;
   align-items: flex-start;
   gap: 1.1rem;
@@ -562,12 +562,12 @@ button {
   transition: border-color 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
 }
 
-.tn-card:hover {
+.et-card:hover {
   border-color: rgba(15, 105, 154, 0.14);
   box-shadow: 0 8px 28px rgba(15, 23, 42, 0.07);
 }
 
-.tn-card-icon {
+.et-card-icon {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
@@ -577,16 +577,16 @@ button {
   color: var(--color-primary);
 }
 
-.tn-card-icon svg {
+.et-card-icon svg {
   width: 30px;
   height: 30px;
 }
 
-.tn-card-body {
+.et-card-body {
   min-width: 0;
 }
 
-.tn-card-title {
+.et-card-title {
   margin: 0 0 0.4rem;
   font-family: var(--font-sans);
   font-size: 1.0625rem;
@@ -595,7 +595,7 @@ button {
   color: var(--color-text);
 }
 
-.tn-card-text {
+.et-card-text {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.5;
@@ -603,11 +603,11 @@ button {
 }
 
 /* ----- Current treatment landscape (inside Indication only) ----- */
-.tn-landscape {
+.et-landscape {
   margin-top: 0;
 }
 
-.tn-landscape-card {
+.et-landscape-card {
   background: var(--color-surface);
   border-radius: var(--radius-panel);
   border: 1px solid rgba(15, 105, 154, 0.1);
@@ -615,7 +615,7 @@ button {
   overflow: hidden;
 }
 
-.tn-landscape-card__title {
+.et-landscape-card__title {
   margin: 0;
   padding: clamp(1rem, 2vw, 1.25rem) 1.25rem;
   text-align: center;
@@ -627,34 +627,34 @@ button {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.tn-landscape-card__body {
+.et-landscape-card__body {
   display: grid;
 }
 
 @media (min-width: 768px) {
-  .tn-landscape-card__body {
+  .et-landscape-card__body {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.tn-landscape-col {
+.et-landscape-col {
   padding: clamp(1.25rem, 2.5vw, 1.65rem) clamp(1.15rem, 2.5vw, 1.75rem);
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .tn-landscape-col:first-child {
+  .et-landscape-col:first-child {
     border-right: 1px solid var(--border-subtle);
   }
 }
 
 @media (max-width: 767px) {
-  .tn-landscape-col:first-child {
+  .et-landscape-col:first-child {
     border-bottom: 1px solid var(--border-subtle);
   }
 }
 
-.tn-landscape-col__lead {
+.et-landscape-col__lead {
   margin: 0 0 0.5rem;
   font-family: var(--font-sans);
   font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
@@ -663,7 +663,7 @@ button {
   color: var(--color-text);
 }
 
-.tn-landscape-col__text {
+.et-landscape-col__text {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.55;
@@ -1679,7 +1679,7 @@ button {
   .btn,
   .nav-desktop a,
   .logo-link,
-  .tn-card,
+  .et-card,
   .asset-feature-card,
   .milestone-tile,
   .market-card {
